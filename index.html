@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Raphchat | Coming Soon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#ffffff;
+color:#12325B;
+overflow-x:hidden;
+line-height:1.6;
+}
+
+section{
+padding:90px 8%;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(15px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+box-shadow:0 8px 30px rgba(0,0,0,.05);
+z-index:999;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-size:26px;
+font-weight:800;
+color:#1769ff;
+}
+
+.logo-circle{
+width:45px;
+height:45px;
+border-radius:50%;
+background:linear-gradient(135deg,#1769ff,#57a5ff);
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:20px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:#16345f;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#1769ff;
+}
+
+.download-btn{
+padding:14px 28px;
+border:none;
+border-radius:30px;
+background:linear-gradient(135deg,#1769ff,#57a5ff);
+color:white;
+font-weight:700;
+cursor:pointer;
+transition:.3s;
+}
+
+.download-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 15px 35px rgba(23,105,255,.35);
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:70px;
+padding-top:120px;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text span{
+display:inline-block;
+padding:10px 18px;
+background:#EAF2FF;
+border-radius:50px;
+color:#1769ff;
+font-weight:700;
+margin-bottom:25px;
+}
+
+.hero-text h1{
+font-size:64px;
+font-weight:800;
+line-height:1.1;
+margin-bottom:25px;
+}
+
+.hero-text p{
+font-size:20px;
+color:#53647D;
+margin-bottom:40px;
+max-width:620px;
+}
+
+.hero-buttons{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+.primary-btn{
+padding:17px 34px;
+border-radius:40px;
+background:linear-gradient(135deg,#1769ff,#57a5ff);
+color:white;
+text-decoration:none;
+font-weight:700;
+}
+
+.secondary-btn{
+padding:17px 34px;
+border-radius:40px;
+border:2px solid #1769ff;
+text-decoration:none;
+font-weight:700;
+color:#1769ff;
+}
+
+.hero-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.phone{
+width:320px;
+height:640px;
+background:white;
+border-radius:45px;
+box-shadow:0 40px 80px rgba(0,0,0,.15);
+padding:20px;
+animation:float 5s ease-in-out infinite;
+border:10px solid #111;
+}
+
+.screen{
+height:100%;
+border-radius:30px;
+background:linear-gradient(180deg,#1769ff,#5fa8ff,#ffffff);
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+color:white;
+font-size:28px;
+font-weight:700;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-18px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:70px;
+}
+
+.stat{
+background:#F7FAFF;
+padding:35px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 15px 30px rgba(0,0,0,.05);
+}
+
+.stat h2{
+font-size:42px;
+color:#1769ff;
+margin-bottom:10px;
+}
+
+.stat p{
+color:#6D7C94;
+}
+
+@media(max-width:1000px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.hero-text h1{
+font-size:48px;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+nav ul{
+display:none;
+}
+
+}</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<div class="logo-circle">R</div>
+<span>Raphchat</span>
+</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#vision">Vision</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<button class="download-btn">
+Join Waitlist
+</button>
+
+</nav>
+
+<section class="hero container">
+
+<div class="hero-text">
+
+<span>COMING SOON ✨</span>
+
+<h1>
+Meaningful conversations.
+Real friendships.
+Christ-centered community.
+</h1>
+
+<p>
+
+Raphchat is building a digital space where believers can connect,
+encourage one another, grow spiritually, and build genuine
+friendships in a safe and uplifting community.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contact" class="primary-btn">
+Join the Waitlist
+</a>
+
+<a href="#about" class="secondary-btn">
+Learn More
+</a>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h2>Safe</h2>
+<p>Built around respect, kindness and meaningful conversations.</p>
+</div>
+
+<div class="stat">
+<h2>Faith</h2>
+<p>Created to encourage spiritual growth and authentic fellowship.</p>
+</div>
+
+<div class="stat">
+<h2>Community</h2>
+<p>Helping believers connect beyond church walls.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<div class="phone">
+
+<div class="screen">
+
+<div>
+
+<h2>Raphchat</h2>
+
+<p style="margin-top:20px;font-size:18px;">
+A new beginning for meaningful Christian conversations.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<h2 style="font-size:42px;text-align:center;margin-bottom:25px;">
+About Raphchat
+</h2>
+
+<p style="text-align:center;max-width:850px;margin:auto;font-size:20px;color:#66768d;">
+
+Raphchat is more than another messaging platform.
+It is a vision to create a Christ-centered digital community where
+faith, friendship, encouragement and authentic conversations come together.
+Whether you're looking to connect with like-minded believers,
+grow spiritually or simply find a supportive community,
+Raphchat is being built with you in mind.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="vision" style="background:#F8FBFF;">
+
+<div class="container">
+
+<h2 style="text-align:center;font-size:42px;margin-bottom:50px;">
+Mission & Vision
+</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:35px;">
+
+<div class="stat">
+
+<h2 style="font-size:30px;">Mission</h2>
+
+<p>
+
+To create a peaceful digital community where believers
+can communicate, grow together and build meaningful
+relationships rooted in Christ.
+
+</p>
+
+</div>
+
+<div class="stat">
+
+<h2 style="font-size:30px;">Vision</h2>
+
+<p>
+
+To become one of the world's most trusted Christian
+communication platforms, connecting believers globally.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section><section id="features">
+
+<div class="container">
+
+<h2 style="text-align:center;font-size:42px;margin-bottom:20px;">
+Planned Features
+</h2>
+
+<p style="text-align:center;color:#6b7280;font-size:18px;max-width:700px;margin:0 auto 60px;">
+Every feature is being designed to encourage meaningful conversations,
+healthy community and an excellent user experience.
+</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;">
+
+<div class="stat">
+<h2 style="font-size:28px;">💬 Messaging</h2>
+<p>Fast, simple and meaningful conversations.</p>
+</div>
+
+<div class="stat">
+<h2 style="font-size:28px;">👥 Communities</h2>
+<p>Create or join Christ-centered communities.</p>
+</div>
+
+<div class="stat">
+<h2 style="font-size:28px;">🙏 Prayer</h2>
+<p>Share prayer requests and celebrate testimonies together.</p>
+</div>
+
+<div class="stat">
+<h2 style="font-size:28px;">📖 Bible Sharing</h2>
+<p>Share verses, devotionals and daily encouragement.</p>
+</div>
+
+<div class="stat">
+<h2 style="font-size:28px;">🎉 Events</h2>
+<p>Discover church programs, conferences and fellowship events.</p>
+</div>
+
+<div class="stat">
+<h2 style="font-size:28px;">🔒 Privacy</h2>
+<p>Your conversations remain secure and respected.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section style="background:#1769ff;color:white;">
+
+<div class="container">
+
+<h2 style="text-align:center;font-size:42px;margin-bottom:20px;">
+Raphchat+
+</h2>
+
+<p style="text-align:center;font-size:20px;max-width:800px;margin:auto;">
+
+Raphchat+ will introduce premium tools for deeper community engagement,
+exclusive content, enhanced personalization and future features.
+More details will be shared as development progresses.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="faq">
+
+<div class="container">
+
+<h2 style="text-align:center;font-size:42px;margin-bottom:50px;">
+Frequently Asked Questions
+</h2>
+
+<div class="stat">
+<h2 style="font-size:24px;">When will Raphchat launch?</h2>
+<p>We're actively building Raphchat. Join the waitlist to receive updates.</p>
+</div>
+
+<div class="stat">
+<h2 style="font-size:24px;">Will Raphchat be free?</h2>
+<p>Yes. The core experience will be free, with optional premium features in Raphchat+.</p>
+</div>
+
+<div class="stat">
+<h2 style="font-size:24px;">Who is Raphchat for?</h2>
+<p>Anyone seeking meaningful, respectful and Christ-centered conversations.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" style="background:#F8FBFF;">
+
+<div class="container">
+
+<h2 style="text-align:center;font-size:42px;margin-bottom:20px;">
+Join the Waitlist
+</h2>
+
+<p style="text-align:center;color:#6b7280;margin-bottom:40px;">
+Be among the first to know when Raphchat launches.
+</p>
+
+<form style="max-width:600px;margin:auto;display:flex;flex-direction:column;gap:20px;">
+
+<input
+type="text"
+placeholder="Full Name"
+style="padding:18px;border-radius:12px;border:1px solid #d6dbe5;font-size:16px;">
+
+<input
+type="email"
+placeholder="Email Address"
+style="padding:18px;border-radius:12px;border:1px solid #d6dbe5;font-size:16px;">
+
+<button
+style="padding:18px;border:none;border-radius:12px;background:#1769ff;color:white;font-size:18px;font-weight:bold;cursor:pointer;">
+
+Join Waitlist
+
+</button>
+
+</form>
+
+</div>
+
+</section><footer style="background:#0F172A;color:white;padding:70px 8%;">
+
+<div class="container">
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;">
+
+<div>
+
+<h2 style="margin-bottom:20px;">Raphchat</h2>
+
+<p style="color:#cbd5e1;line-height:1.8;">
+Building a Christ-centered community where meaningful conversations,
+faith and genuine friendships come together.
+</p>
+
+</div>
+
+<div>
+
+<h3 style="margin-bottom:20px;">Quick Links</h3>
+
+<p><a href="#about" style="color:#cbd5e1;text-decoration:none;">About</a></p>
+<p><a href="#features" style="color:#cbd5e1;text-decoration:none;">Features</a></p>
+<p><a href="#vision" style="color:#cbd5e1;text-decoration:none;">Mission & Vision</a></p>
+<p><a href="#faq" style="color:#cbd5e1;text-decoration:none;">FAQ</a></p>
+
+</div>
+
+<div>
+
+<h3 style="margin-bottom:20px;">Contact</h3>
+
+<p style="color:#cbd5e1;">
+📧 hello@raphchat.com
+</p>
+
+<p style="color:#cbd5e1;">
+🌍 Worldwide
+</p>
+
+<p style="color:#cbd5e1;">
+Coming Soon
+</p>
+
+</div>
+
+</div>
+
+<hr style="margin:50px 0;border:none;border-top:1px solid rgba(255,255,255,.15);">
+
+<p style="text-align:center;color:#94A3B8;">
+
+© 2026 Raphchat. All Rights Reserved.
+
+<br><br>
+
+Designed with 💙 for meaningful conversations.
+
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
+  
